@@ -7,4 +7,22 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Fresh App Color Palette -->
+    <color name="colorPrimary">#D84315</color>
+    <color name="colorPrimaryDark">#BF360C</color>
+    <color name="colorPrimaryLight">#FF8A65</color>
+    <color name="colorAccent">#00897B</color>
+    <color name="colorAccentDark">#00695C</color>
+    <color name="pageBackground">#FFF8F0</color>
+    <color name="cardWhite">#FFFFFF</color>
+    <color name="headerBg">#D84315</color>
+    <color name="textDark">#3E2723</color>
+    <color name="textMedium">#6D4C41</color>
+    <color name="textLight">#8D6E63</color>
+    <color name="fieldBorder">#D7CCC8</color>
+    <color name="fieldBg">#FFFFFF</color>
+    <color name="successGreen">#2E7D32</color>
+    <color name="splashBg">#BF360C</color>
+    <color name="splashTextSub">#FFCCBC</color>
 </resources>

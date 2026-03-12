@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pageBackground"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/event_banner"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingTop="36dp"
+            android:paddingBottom="28dp"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registration Confirmed"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your details are shown below"
+                android:textSize="13sp"
+                android:textColor="@color/splashTextSub"
+                android:layout_marginTop="4dp" />
+
+        </LinearLayout>
+
+        <!-- Body -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="22dp">
+
+            <!-- Profile Photo Card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:background="@drawable/card_background"
+                android:padding="24dp"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:id="@+id/ivConfirmPhoto"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/image_circle_border"
+                    android:padding="4dp"
+                    android:contentDescription="Profile Image" />
+
+            </LinearLayout>
+
+            <!-- Details Card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/card_background"
+                android:padding="20dp"
+                android:layout_marginBottom="16dp">
+
+                <!-- Name Row -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="14dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Full Name"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textLight" />
+
+                    <TextView
+                        android:id="@+id/tvConfirmName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@color/textDark"
+                        android:layout_marginTop="2dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/fieldBorder"
+                    android:layout_marginBottom="14dp" />
+
+                <!-- Phone Row -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="14dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Phone Number"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textLight" />
+
+                    <TextView
+                        android:id="@+id/tvConfirmPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@color/textDark"
+                        android:layout_marginTop="2dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/fieldBorder"
+                    android:layout_marginBottom="14dp" />
+
+                <!-- Email Row -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="14dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textLight" />
+
+                    <TextView
+                        android:id="@+id/tvConfirmEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@color/textDark"
+                        android:layout_marginTop="2dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/fieldBorder"
+                    android:layout_marginBottom="14dp" />
+
+                <!-- Event Type Row -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="14dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Event Type"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textLight" />
+
+                    <TextView
+                        android:id="@+id/tvConfirmEventType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@color/textDark"
+                        android:layout_marginTop="2dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/fieldBorder"
+                    android:layout_marginBottom="14dp" />
+
+                <!-- Date Row -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="14dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Event Date"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textLight" />
+
+                    <TextView
+                        android:id="@+id/tvConfirmDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@color/textDark"
+                        android:layout_marginTop="2dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/fieldBorder"
+                    android:layout_marginBottom="14dp" />
+
+                <!-- Gender Row -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gender"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textLight" />
+
+                    <TextView
+                        android:id="@+id/tvConfirmGender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@color/textDark"
+                        android:layout_marginTop="2dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Success Banner -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/card_background"
+                android:padding="18dp"
+                android:layout_marginBottom="24dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\u2714"
+                    android:textSize="28sp"
+                    android:textColor="@color/successGreen"
+                    android:layout_marginEnd="14dp" />
+
+                <TextView
+                    android:id="@+id/tvSuccessMsg"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Your event registration has been submitted successfully."
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/successGreen" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
