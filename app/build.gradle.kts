@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.eventmanagement"
+    namespace = "com.example.event_management_application"
     compileSdk {
         version = release(36) {
             minorApiLevel = 1
@@ -11,7 +11,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.example.eventmanagement"
+        applicationId = "com.example.event_management_application"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
